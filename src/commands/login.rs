@@ -8,10 +8,16 @@ use clap::{
     Command,
 };
 
+use crate::cli;
+
 pub fn command() -> Command {
     Command::new("login").about("Prompts you to log into your Devpost account")
 }
 
-pub fn handle(matches: &ArgMatches) {
-    unimplemented!()
+pub fn handle(_matches: &ArgMatches) {
+    cli::prompt("E-Mail: ");
+    cli::prompt_password("Password: ");
+
+    println!();
+    println!("You are now logged in! 🎉");
 }

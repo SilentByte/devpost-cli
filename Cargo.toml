@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.1.4", features = ["color", "help", "error-context", "suggestions", "usage", "std", "unicode", "wrap_help"] }
+rpassword = "7.2.0"
