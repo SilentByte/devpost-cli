@@ -10,7 +10,6 @@ mod preview;
 mod push;
 
 use clap::{
-    arg,
     ArgMatches,
     Command,
 };
