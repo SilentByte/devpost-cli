@@ -7,6 +7,7 @@ use std::fs::File;
 
 use serde::Deserialize;
 
+#[allow(dead_code)]
 #[derive(Debug, Deserialize)]
 pub struct Project {
     identifier: String,

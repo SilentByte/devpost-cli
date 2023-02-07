@@ -7,6 +7,7 @@ use clap::{
     ArgMatches,
     Command,
 };
+use colored::Colorize;
 
 use crate::cli;
 
@@ -15,11 +16,22 @@ pub fn command() -> Command {
 }
 
 pub fn handle(_matches: &ArgMatches) -> anyhow::Result<()> {
-    cli::prompt("E-Mail: ");
+    println!(
+        "{}",
+        include_str!("../../templates/banner.txt")
+            .bright_white()
+            .on_blue()
+    );
+
+    println!();
+    println!("Enter your credentials for Devpost.com");
+    println!();
+
+    cli::prompt("E-Mail:   ");
     cli::prompt_password("Password: ");
 
     println!();
-    println!("You are now logged in! 🎉");
+    println!("{}", "You are now logged in! 🎉".bright_green().bold());
 
     Ok(())
 }

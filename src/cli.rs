@@ -11,10 +11,11 @@ use std::io::{
 use std::thread;
 use std::time::Duration;
 
+use colored::Colorize;
 use indicatif::ProgressBar;
 
 pub fn prompt(prompt: &str) -> String {
-    print!("{}", prompt);
+    print!("{}", prompt.bold());
 
     stdout().flush().unwrap();
 
@@ -24,8 +25,8 @@ pub fn prompt(prompt: &str) -> String {
     line
 }
 
-pub fn prompt_password(prompt: impl ToString) -> String {
-    rpassword::prompt_password(prompt).unwrap()
+pub fn prompt_password(prompt: &str) -> String {
+    rpassword::prompt_password(prompt.bold()).unwrap()
 }
 
 pub fn progress_bar(duration: Duration) {
