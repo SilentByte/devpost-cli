@@ -64,6 +64,13 @@ pub fn handle(matches: &ArgMatches) -> anyhow::Result<()> {
     File::create(dir.join(Path::new(thumbnail)))?
         .write_all(include_bytes!("../../templates/thumbnail.gif"))?;
 
+    if let Some(description) = project.description {
+        let path = dir.join(Path::new(&description));
+        if !Path::exists(&path) {
+            File::create(path)?.write_all(include_bytes!("../../templates/README.md"))?;
+        }
+    }
+
     println!();
     println!(
         "{}",
