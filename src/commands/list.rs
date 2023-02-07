@@ -17,7 +17,7 @@ pub fn command() -> Command {
     Command::new("list").about("Lists all your projects")
 }
 
-pub fn handle(matches: &ArgMatches) {
+pub fn handle(_matches: &ArgMatches) -> anyhow::Result<()> {
     let projects = vec![
         ("Pothole AI", "What if we used Edge Analytics on a dashcam to map out where potholes were, so that local governments and communities knew where to focus their efforts?", "Facebook Hackathon: AI"),
         ("Traffic Cop", "WiFi Beacon & Client sniffing pipeline for analysing the movements of Human Traffickers.", "Serverless Apps for Social Good"),
@@ -47,4 +47,6 @@ pub fn handle(matches: &ArgMatches) {
             p.1.white()
         )
     }
+
+    Ok(())
 }

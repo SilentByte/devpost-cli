@@ -14,10 +14,12 @@ pub fn command() -> Command {
     Command::new("login").about("Prompts you to log into your Devpost account")
 }
 
-pub fn handle(_matches: &ArgMatches) {
+pub fn handle(_matches: &ArgMatches) -> anyhow::Result<()> {
     cli::prompt("E-Mail: ");
     cli::prompt_password("Password: ");
 
     println!();
     println!("You are now logged in! 🎉");
+
+    Ok(())
 }

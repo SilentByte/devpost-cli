@@ -12,6 +12,6 @@ pub fn command() -> Command {
     Command::new("push").about("Uploads the changes to Devpost")
 }
 
-pub fn handle(matches: &ArgMatches) {
+pub fn handle(_matches: &ArgMatches) -> anyhow::Result<()> {
     unimplemented!()
 }

@@ -1,0 +1,21 @@
+---
+identifier: hackdevpost
+
+name: Devpost CLI
+summary: >
+    TODO: Add summary.
+
+thumbnail: devpost/thumbnail.gif
+description: README.md
+
+built-with:
+    - Rust
+    - Markdown
+
+urls:
+    - https://github.com/SilentByte/devpost-cli
+
+images:
+    - devpost/thumbnail.gif
+
+video-url:

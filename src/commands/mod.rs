@@ -13,6 +13,7 @@ use clap::{
     ArgMatches,
     Command,
 };
+use colored::Colorize;
 
 pub fn all() -> Vec<Command> {
     vec![
@@ -25,12 +26,22 @@ pub fn all() -> Vec<Command> {
 }
 
 pub fn handle(name: &str, matches: &ArgMatches) {
-    match name {
+    let result = match name {
         "login" => login::handle(matches),
         "list" => list::handle(matches),
         "init" => init::handle(matches),
         "push" => push::handle(matches),
         "preview" => preview::handle(matches),
         _ => unimplemented!(),
+    };
+
+    match result {
+        Ok(_) => {
+            std::process::exit(0);
+        }
+        Err(e) => {
+            println!("{} {:?}", "error:".bright_red().bold(), e);
+            std::process::exit(1);
+        }
     }
 }

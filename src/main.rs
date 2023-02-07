@@ -19,5 +19,5 @@ fn main() {
     match cli().get_matches().subcommand() {
         Some((name, matches)) => devpost_cli::commands::handle(name, matches),
         _ => unreachable!(),
-    }
+    };
 }
