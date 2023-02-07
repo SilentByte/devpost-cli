@@ -15,7 +15,7 @@ pub fn command() -> Command {
 }
 
 pub fn handle(_matches: &ArgMatches) -> anyhow::Result<()> {
-    let url = Project::from_dir()?.url();
+    let url = Project::from_work_dir()?.url();
 
     println!("Opening {} in your browser...", url);
     open::that(url)?;

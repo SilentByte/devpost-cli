@@ -29,7 +29,7 @@ pub fn handle(_matches: &ArgMatches) -> anyhow::Result<()> {
     println!("Enter your credentials for Devpost.com");
     println!();
 
-    cli::prompt("E-Mail:   ");
+    cli::prompt_required("E-Mail:   ");
     cli::prompt_password("Password: ");
 
     cli::progress_bar(Duration::from_millis(200));
