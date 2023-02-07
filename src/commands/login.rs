@@ -3,6 +3,8 @@
  * Copyright (c) 2023 SilentByte <https://silentbyte.com/>
  */
 
+use std::time::Duration;
+
 use clap::{
     ArgMatches,
     Command,
@@ -29,6 +31,8 @@ pub fn handle(_matches: &ArgMatches) -> anyhow::Result<()> {
 
     cli::prompt("E-Mail:   ");
     cli::prompt_password("Password: ");
+
+    cli::progress_bar(Duration::from_millis(200));
 
     println!();
     println!("{}", "You are now logged in! 🎉".bright_green().bold());
