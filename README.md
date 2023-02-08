@@ -8,9 +8,7 @@
 
 # DevpostCLI
 
-Devpost CLI is a concept for a Command Line Interface used to interact with Devpost.com. The idea is to more closely tie
-the information provided on Devpost (such as project name, description, instructions, images, etc.) with the code
-repository that is ultimately submitted.
+Devpost CLI is a concept for a Command Line Interface used to interact with Devpost.com. The idea is to more closely tie the information provided on Devpost (such as project name, description, instructions, images, etc.) with the code repository that is ultimately submitted.
 
 This reduces information duplication and allows hackathon participants to keep everything in one place (the true source of information).
 
@@ -26,7 +24,14 @@ This repository represents our submission for the [Hack Devpost Hackathon](https
 
 ## Inspiration
 
-TODO
+I have participated in a number of Devpost hackathons (this is my 12th 😊) and the idea for this project arose out of a minor annoyance when uploading submissions to Devpost. As a software engineer, I like to keep information at a central location, i.e. the project repository. Unfortunately, when submitting hackathons I have to duplicate information. Most notably, this is the case with the `README.md` file. `README.md` contains all necessary information and lives in the project's repository, but its contents have to be copied over to Devpost when submitting.
+
+To make my intentions clearer, I like to use graphics and diagrams embedded in `README.md` using relative URLs. This is not possible when submitting to Devpost, and I have to go over the entire submission and replace all relative URLs with absolute URLs. Finally, to make matters worse, Devpost is caching these images, which means I have to change their URLs every time I update the images to force the cache to be invalidated.
+
+In an ideal world, there should be a way to let Devpost know where to find the project description and all associated information. This is what this concept submission tries to address.
+
+Having a tighter integration between project repositories and Devpost to manage projects will streamline the entire workflow and make Devpost much more accessible to developers, alleviating code and documentation duplication, avoiding caching issues, and reduces the chance of having outdated or diverging information.
+
 
 
 ## What it does
