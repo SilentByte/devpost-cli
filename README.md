@@ -14,6 +14,8 @@ This reduces information duplication and allows hackathon participants to keep e
 
 This repository represents our submission for the [Hack Devpost Hackathon](https://hackdevpost.devpost.com/).
 
+![DevpostCLI](docs/cli.gif)
+
 
 ## Inspiration
 

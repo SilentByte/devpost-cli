@@ -5,7 +5,7 @@ name: Devpost CLI
 summary: >
     TODO: Add summary.
 
-thumbnail: devpost/thumbnail.gif
+thumbnail: docs/thumbnail.gif
 description: README.md
 
 built-with:
@@ -16,6 +16,6 @@ urls:
     - https://github.com/SilentByte/devpost-cli
 
 images:
-    - devpost/thumbnail.gif
+    - docs/thumbnail.gif
 
 video-url:
