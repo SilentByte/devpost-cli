@@ -15,13 +15,6 @@ This reduces information duplication and allows hackathon participants to keep e
 This repository represents our submission for the [Hack Devpost Hackathon](https://hackdevpost.devpost.com/).
 
 
-## Video Presentation
-
-[Click here to watch the submission video.](https://www.youtube.com/watch?v=TODO_ADD_VIDEO_ID)
-
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/TODO_ADD_VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=TODO_ADD_VIDEO_ID)
-
-
 ## Inspiration
 
 I have participated in a number of Devpost hackathons (this is my 12th 😊) and the idea for this project arose out of a minor annoyance when uploading submissions to Devpost. As a software engineer, I like to keep information at a central location, i.e. the project repository. Unfortunately, when submitting hackathons I have to duplicate information. Most notably, this is the case with the `README.md` file. `README.md` contains all necessary information and lives in the project's repository, but its contents have to be copied over to Devpost when submitting.
@@ -31,7 +24,6 @@ To make my intentions clearer, I like to use graphics and diagrams embedded in `
 In an ideal world, there should be a way to let Devpost know where to find the project description and all associated information. This is what this concept submission tries to address.
 
 Having a tighter integration between project repositories and Devpost to manage projects will streamline the entire workflow and make Devpost much more accessible to developers, alleviating code and documentation duplication, avoiding caching issues, and reduces the chance of having outdated or diverging information.
-
 
 
 ## What it does
@@ -102,6 +94,7 @@ To build and install the application into `~/.local/bin/devpost`, run the follow
 ```
 ./install.sh
 ```
+
 
 ## What's next for Devpost CLI
 
