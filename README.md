@@ -19,9 +19,9 @@ This repository represents our submission for the [Hack Devpost Hackathon](https
 
 ## Video Submission
 
-[Click here to watch the submission video.](https://www.youtube.com/watch?v=kK75PC9GS7g)
+[Click here to watch the submission video.](https://www.youtube.com/watch?v=x_T4JCRRto8)
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/kK75PC9GS7g/0.jpg)](https://www.youtube.com/watch?v=kK75PC9GS7g)
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/x_T4JCRRto8/0.jpg)](https://www.youtube.com/watch?v=x_T4JCRRto8)
 
 
 ## Inspiration
@@ -64,28 +64,28 @@ A typical workflow is intended to look like this:
 
 3) The configuration file `Devpost.yml` can be edited manually to add more information required by Devpost for a valid submission. This includes, for example, an URL to the presentation video. An example of a configuration file listed below. Note that we are directly linking `README.md` to let Devpost know that we want to use the README file of the repository instead of providing a (duplicate) description on the website.
 
-```yaml
-identifier: hackdevpost
-name: Devpost CLI
-summary: This is the project's elevator pitch!
-thumbnail: thumbnail.gif
-description: README.md
-built_with:
-    - Rust
-    - Markdown
-links:
-    - https://github.com/SilentByte/devpost-cli
-    - https://devpost.com/software/hackdevpost
-images:
-    - docs/banner.png
-video_url: "TODO: ADD YOUTUBE URL"
-```
+    ```yaml
+    identifier: hackdevpost
+    name: Devpost CLI
+    summary: This is the project's elevator pitch!
+    thumbnail: thumbnail.gif
+    description: README.md
+    built_with:
+        - Rust
+        - Markdown
+    links:
+        - https://github.com/SilentByte/devpost-cli
+        - https://devpost.com/software/hackdevpost
+    images:
+        - docs/banner.png
+    video_url: https://www.youtube.com/watch?v=x_T4JCRRto8
+    ```
 
-4. To synchronize the changes and upload the data to Devpost, the user runs `devpost push`.
+4) To synchronize the changes and upload the data to Devpost, the user runs `devpost push`.
 
-5. Running `devpost preview` opens the project's preview page, e.g. https://devpost.com/software/hackdevpost.
+5) Running `devpost preview` opens the project's preview page, e.g. https://devpost.com/software/hackdevpost.
 
-6. Once the user has finalized the project, it can be submitted on Devpost along with all additional information required (e.g. questionnaires). Alternatively, a `devpost submit` command could be considered.
+6) Once the user has finalized the project, it can be submitted on Devpost along with all additional information required (e.g. questionnaires). Alternatively, a `devpost submit` command could be considered.
 
 
 ## How we built it
@@ -111,4 +111,4 @@ As this is just an idea in the form of a mock prototype, what's next is the actu
 
 For instance, if Devpost decided to also host hackathons that are more focused on Machine Learning, Devpost CLI could could assist in the creation of development environments, downloading data relevant to specific challenges, and uploading the models that have been trained on the data for server-side evaluation and the automatic determination of the winners(i.e. testing a participant's trained model against a hidden dataset to account for overfitting/bias to determine how well it actually works).
 
-For more details, watch the video linked above.
+[For more details, watch the submission video.](https://www.youtube.com/watch?v=x_T4JCRRto8)
