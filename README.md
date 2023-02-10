@@ -17,6 +17,13 @@ This repository represents our submission for the [Hack Devpost Hackathon](https
 ![DevpostCLI](docs/cli.gif)
 
 
+## Video Submission
+
+[Click here to watch the submission video.](https://www.youtube.com/watch?v=kK75PC9GS7g)
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/kK75PC9GS7g/0.jpg)](https://www.youtube.com/watch?v=kK75PC9GS7g)
+
+
 ## Inspiration
 
 I have participated in a number of Devpost hackathons (this is my 12th 😊) and the idea for this project arose out of a minor annoyance when uploading submissions to Devpost. As a software engineer, I like to keep information at a central location, i.e. the project repository. Unfortunately, when submitting hackathons I have to duplicate information. Most notably, this is the case with the `README.md` file. `README.md` contains all necessary information and lives in the project's repository, but its contents have to be copied over to Devpost when submitting.

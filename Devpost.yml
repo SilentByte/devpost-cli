@@ -3,7 +3,8 @@ identifier: hackdevpost
 
 name: Devpost CLI
 summary: >
-    TODO: Add summary.
+    An idea for a Command Line Interface for hackathons hosted on devpost.com
+    to help hackers streamline their submissions.
 
 thumbnail: docs/thumbnail.gif
 description: README.md
@@ -17,5 +18,6 @@ urls:
 
 images:
     - docs/thumbnail.gif
+    - docs/cli.gif
 
-video-url:
+video-url: https://www.youtube.com/watch?v=kK75PC9GS7g
