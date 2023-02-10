@@ -41,7 +41,7 @@ pub fn prompt_required(text: &str) -> String {
 pub fn prompt_bool_required(text: &str, default: bool) -> bool {
     loop {
         let input = prompt(text);
-        let input = input.trim();
+        let input = input.trim().to_lowercase();
 
         if input.is_empty() {
             return default;
