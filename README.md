@@ -65,20 +65,30 @@ A typical workflow is intended to look like this:
 3) The configuration file `Devpost.yml` can be edited manually to add more information required by Devpost for a valid submission. This includes, for example, an URL to the presentation video. An example of a configuration file listed below. Note that we are directly linking `README.md` to let Devpost know that we want to use the README file of the repository instead of providing a (duplicate) description on the website.
 
     ```yaml
+    ---
     identifier: hackdevpost
+
     name: Devpost CLI
-    summary: This is the project's elevator pitch!
-    thumbnail: thumbnail.gif
+    summary: >
+        An idea for a Command Line Interface for hackathons hosted on devpost.com
+        to help hackers streamline their submissions.
+
+    thumbnail: docs/thumbnail.gif
     description: README.md
-    built_with:
+
+    built-with:
         - Rust
         - Markdown
-    links:
+        - Others        
+
+    urls:
         - https://github.com/SilentByte/devpost-cli
-        - https://devpost.com/software/hackdevpost
+
     images:
-        - docs/banner.png
-    video_url: https://www.youtube.com/watch?v=x_T4JCRRto8
+        - docs/thumbnail.gif
+        - docs/cli.gif
+
+    video-url: https://www.youtube.com/watch?v=x_T4JCRRto8
     ```
 
 4) To synchronize the changes and upload the data to Devpost, the user runs `devpost push`.

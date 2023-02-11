@@ -12,6 +12,7 @@ description: README.md
 built-with:
     - Rust
     - Markdown
+    - Others
 
 urls:
     - https://github.com/SilentByte/devpost-cli
